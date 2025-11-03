@@ -1,4 +1,4 @@
-# 🛒 Tienda Online API - TypeScript
+# Tienda Online API - TypeScript
 
 API RESTful desarrollada con **Node.js**, **Express**, **TypeScript** y **MongoDB**, que gestiona usuarios, clientes, productos y pedidos.  
 Incluye autenticación con **JWT**, documentación con **Swagger**, y vistas con **EJS**.
@@ -42,7 +42,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 ---
 
-## 🧩 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 TIENDA-ONLINE-TS/
@@ -63,9 +63,8 @@ TIENDA-ONLINE-TS/
 
 ---
 
-## 🧠 Scripts disponibles
 
-### 🔹 Ejecutar en modo desarrollo
+###  Ejecutar en modo desarrollo
 Compila y ejecuta el proyecto con **recarga automática**:
 ```bash
 npm run dev
