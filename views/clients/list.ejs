@@ -1,0 +1,27 @@
+<h2 class="mb-4">Lista de Clientes</h2>
+
+<a href="/clients/newClient" class="btn btn-success mb-3">Agregar Cliente</a>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Dirección</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% clients.forEach(c => { %>
+      <tr>
+        <td><%= c.name %></td>
+        <td><%= c.email %></td>
+        <td><%= c.address %></td>
+        <td>
+          <a href="/orders/<%= c._id %>" class="btn btn-primary btn-sm">Ver Pedidos</a>
+          <a href="/orders/newOrder/<%= c._id %>" class="btn btn-success btn-sm">Nuevo Pedido</a>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>

@@ -1,0 +1,27 @@
+<h2>Pedidos de <%= client.name %></h2>
+
+<a href="/clients" class="btn btn-secondary mb-3">Volver</a>
+<a href="/orders/newOrder/<%= client._id %>" class="btn btn-primary mb-3">Nuevo Pedido</a>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID Pedido</th>
+      <th>Total</th>
+      <th>Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if (orders.length === 0) { %>
+      <tr><td colspan="3" class="text-center">Sin pedidos registrados</td></tr>
+    <% } else { %>
+      <% orders.forEach(o => { %>
+        <tr>
+          <td><%= o._id %></td>
+          <td>$<%= o.total %></td>
+          <td><%= o.createdAt.toLocaleString() %></td>
+        </tr>
+      <% }) %>
+    <% } %>
+  </tbody>
+</table>
